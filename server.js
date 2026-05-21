@@ -147,4 +147,7 @@ app.prepare().then(() => {
   httpServer.listen(port, host, () => {
     console.log(`WeJam service running on http://${host}:${port}`);
   });
+}).catch((err) => {
+  console.error('WeJam failed to start:', err);
+  process.exit(1);
 });
