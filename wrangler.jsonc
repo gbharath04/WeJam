@@ -1,7 +1,7 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "main": ".open-next/worker.js",
-  "name": "wejam",
+  "name": "we",
   "compatibility_date": "2026-05-21",
   "compatibility_flags": [
     "nodejs_compat"
