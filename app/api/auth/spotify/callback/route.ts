@@ -2,11 +2,7 @@ import { NextResponse } from 'next/server';
 import cookie from 'cookie';
 import { nanoid } from 'nanoid';
 import { fetchToken, fetchCurrentUser, verifyPremium } from '../../../../../lib/spotify';
-import { createRequire } from 'module';
-
-const require = createRequire(import.meta.url);
-const { createSession } = require('../../../../../lib/database.js');
-
+import { createSession } from '../../../../../lib/database';
 export async function GET(request: Request) {
   const url = new URL(request.url);
   const code = url.searchParams.get('code');
