@@ -7,9 +7,7 @@ export async function GET(request: Request) {
   const url = new URL(request.url);
   const code = url.searchParams.get('code');
   const error = url.searchParams.get('error');
-const baseUrl =
-  process.env.NEXT_PUBLIC_BASE_URL ||
-  `${url.protocol}//${url.host}`;
+const baseUrl = "https://we.bharathwaj04.workers.dev";
 
   if (error || !code) {
     return NextResponse.redirect(`${baseUrl}/?error=${encodeURIComponent(error || 'Authorization failed')}`);
