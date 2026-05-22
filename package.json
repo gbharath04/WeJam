@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.1.0",
   "scripts": {
-    "build": "next build",
+  "build": "opennextjs-cloudflare build",
     "dev": "next dev",
     "start": "cross-env NODE_ENV=production node server.js",
     "lint": "next lint",
