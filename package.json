@@ -3,9 +3,9 @@
   "private": true,
   "version": "0.1.0",
   "scripts": {
-  "build": "opennextjs-cloudflare build",
+ "build": "next build",
     "dev": "next dev",
-    "start": "cross-env NODE_ENV=production node server.js",
+    "start": "next start",
     "lint": "next lint",
     "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
     "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
